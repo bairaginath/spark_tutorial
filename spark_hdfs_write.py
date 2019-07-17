@@ -6,7 +6,7 @@ if __name__ == '__main__':
     persion_dict={"name" : "james","favorite_color" : "black","favorite_numbers" : [7,11,123] }
     df=sqlContext.createDataFrame([persion_dict])
     df.show()
-    df.write.parquet("hdfs://192.168.56.101:8020/bbehera/people.parquet",mode="append")
+    df.write.parquet("hdfs://0.0.0.0:9000/opt/people.parquet",mode="append")
     #df.write.save("hdfs://192.168.56.101:8020/bbehera/people.parquet",mode="append",format="parquet")
-    efile = sqlContext.read.parquet("hdfs://192.168.56.101:8020/bbehera/people.parquet")
+    efile = sqlContext.read.parquet("hdfs://0.0.0.0:9000/opt/people.parquet")
     efile.show()
