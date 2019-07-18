@@ -64,6 +64,20 @@ Now you can start HDFS
 su - hadoop
 hadoop@ubuntu:~$ start-dfs.sh
 
+create base folder for hdfs file system
+---------------------------------------
+hadoop@ubuntu:~$hadoop fs -mkdir /opt/
+hadoop@ubuntu:~$ hadoop fs -ls /opt/
+Found 2 items
+drwxr-xr-x   - hadoop supergroup          0 2019-07-18 16:07 /opt/people.parquet
+drwxr-xr-x   - hadoop supergroup          0 2019-07-18 16:27 /opt/people_yarn.parquet
+hadoop@ubuntu:~$ hdfs dfs -ls /opt/
+Found 2 items
+drwxr-xr-x   - hadoop supergroup          0 2019-07-18 16:07 /opt/people.parquet
+drwxr-xr-x   - hadoop supergroup          0 2019-07-18 16:27 /opt/people_yarn.parquet
+hadoop@ubuntu:~$
+
+
 HDFS Web UI
 ===========
 http://<ip-address>:9870
