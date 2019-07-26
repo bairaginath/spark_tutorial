@@ -97,8 +97,12 @@ venv.bak/
 # Rope project settings
 .ropeproject
 
+/target/
+
 # mkdocs documentation
 /site
 
 # mypy
 .mypy_cache/
+
+.idea

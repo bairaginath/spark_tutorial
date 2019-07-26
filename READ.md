@@ -100,8 +100,8 @@ hadoop@ubuntu:~$
 
 Download Spark Engine and Run
 ==============================
-wget http://apache.claz.org/spark/spark-2.4.3/spark-2.4.3-bin-hadoop2.7.tgz
-tar xvfz spark-2.4.3-bin-hadoop2.7.tgz
+wget http://apache.claz.org/spark/spark-2.3.3/spark-2.3.3-bin-hadoop2.7.tgz
+tar xvfz spark-2.3.3-bin-hadoop2.7.tgz
 export SPARK_HOME="/home/bairagi/spark/spark-2.4.3-bin-hadoop2.7/"
 $SPARK_HOME/bin/spark-submit spark_hdfs_write.py
 
